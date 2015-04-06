@@ -1,0 +1,199 @@
+<!-- BEGIN .header -->
+<header class="header">
+
+	<!-- BEGIN .wrapper -->
+	<div class="wrapper">
+
+		<div class="header-flex">
+			<div class="header-flex-box">
+				<!-- <h1><a href="index.html">Solidus</a></h1> -->
+				<a href="index.html"><img src="assets/logo.png" alt="" /></a>
+			</div>
+			<div class="header-flex-box latest-news-top">
+				<div class="items-wrapper">
+					<a href="post.html" class="item">
+						<img src="assets/image-15.jpg" alt="" />
+						<strong>Ea omnium incorrupte eos, sea wisi modus semper at</strong>
+					</a>
+					<a href="post.html" class="item">
+						<img src="assets/image-16.jpg" alt="" />
+						<strong>Ea omnium incorrupte eos, sea wisi modus semper at</strong>
+					</a>
+					<a href="post.html" class="item">
+						<img src="assets/image-17.jpg" alt="" />
+						<strong>Ea omnium incorrupte eos, sea wisi modus semper at</strong>
+					</a>
+					<a href="post.html" class="item">
+						<img src="assets/image-15.jpg" alt="" />
+						<strong>Ea omnium incorrupte eos, sea wisi modus semper at</strong>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-center" style="display:none;">
+			<!-- <h1><a href="index.html">Solidus</a></h1> -->
+			<a href="index.html"><img src="assets/logo-big.png" alt="" /></a>
+		</div>
+
+
+		<!-- <nav id="main-menu"> -->
+		<nav id="main-menu" class="willfix main-menu-dark">
+			<!-- BEGIN .wrapper -->
+			<div class="wrapper">
+				<div class="right">
+					<div class="menu-icon">
+						<a href="#"><i class="fa fa-search"></i></a>
+						<div class="content content-search">
+							<form action="#">
+								<input type="search" class="head-search-input" value="" placeholder="Search things.." required="">
+								<input type="submit" class="head-search-button" value="Search">
+							</form>
+						</div>
+					</div>
+				</div>
+				<ul class="load-responsive" rel="Technhom.com">
+					<li class="ot-showmenu"><a href="#">Technhom<span class="cmn-toggle-switch cmn-toggle-switch__htx"><span>toggle menu</span></span></a></li>
+					<li><a href="#" style="border-bottom: 2px solid #45b29d;">Home</a>
+					</li>
+					<li>
+						<%= link_to root_path, style: "border-bottom: 2px solid #e27a3f;", class: "menu-switch" do %>
+								<span><%= @cat1.name %>
+									<span class="m-d-arrow"></span>
+								</span>
+						<% end %>
+							<ul>
+								<% @cat1.subcategories.each do |name| %>
+									<li><%= link_to name.name %></li>
+								<% end %>
+							</ul>
+					</li>
+					
+					<li>
+						<%= link_to root_path,class: "menu-switch", style: "border-bottom: 2px solid #00a651;" do %>
+									<span><%= @cat2.name %>
+									<span class="m-d-arrow"></span>
+								</span>
+						<% end %>
+						<ul>
+							<% @cat2.subcategories.each do |name| %>
+								<li><%= link_to name.name %></li>
+							<% end %>
+						</ul>
+					</li>
+					<li><%= link_to @sublast.name, root_path, style: "border-bottom: 2px solid #efc94c;" %></li>
+					<li>
+							<%= link_to root_path, style: "border-bottom: 2px solid #0076a3;" do %>
+								<span><%= @cat3.name %>
+									<span class="m-d-arrow"></span>
+								</span>
+							<% end %>
+						<ul>
+							<% @cat3.subcategories.each do |name| %>
+								<li><%= link_to name.name %></li>
+							<% end %>
+						</ul>
+					</li>
+				</ul>
+				<!-- END .wrapper -->
+			</div>
+		</nav>
+		<!-- END .wrapper -->
+	</div>
+
+	<div class="under-menu" style="display:none;">
+		<!-- BEGIN .wrapper -->
+		<div class="wrapper">
+			<ul class="load-responsive" rel="កម្មវិធីទាំងអស់">
+			<% @sub.each do |sub| %>
+				<li><%= link_to sub.name %></li>
+			<% end %>
+			</ul>
+			<!-- END .wrapper -->
+		</div>
+	</div>
+	<!-- END .header -->
+</header>
+
+
+
+
+
+
+
+
+
+		<!-- 			<li><a href="features.html" style="border-bottom: 2px solid #efc94c;"><span>បច្ចេកវិទ្យា<span class="m-d-arrow"></span></span></a>
+						<ul>
+							<li><a href="shortcodes.html">Shortcodes</a></li>
+							<li><a href="error-404.html">Error 404 page</a></li>
+							<li><a href="full-width.html">Full width page</a></li>
+							<li><a href="shop.html">Shop Page</a></li>
+						</ul>
+					</li>
+
+					<li class="has-ot-mega-menu"><a href="#" style="border-bottom: 2px solid #e27a3f;"><span>Developer<span class="m-d-arrow"></span></span></a>
+						<ul class="ot-mega-menu">
+							<li>
+								<div class="menu-widgets">
+									<div class="widget">
+										<div class="title-block">
+											<h2>ABOUT SOLIDUS</h2>
+										</div>
+										<div class="ot-about-widget">
+											<p>Deserunt posuere pellentesque porta ridiculus fugiat. Tempus ad per consectetur maecenas penatibus. Aliquip amet phasellus nam sociosqu.</p>
+											<p>Deserunt posuere pellentesque porta ridiculus fugiat. Tempus ad per consectetur maecenas penatibus. Aliquip amet phasellus nam sociosqu.</p>
+										</div>
+									</div>
+
+									<div class="widget">
+										<div class="title-block">
+											<h2>Latest News</h2>
+										</div>
+										<div class="article-block without-assets">
+
+											<div class="item">
+												<div class="item-content">
+													<a href="#" style="background: #0076a3;" class="item-content-category left">Fashion</a>
+													<span class="article-meta left">
+														<a href="blog.html" class="meta-date"><i class="fa fa-clock-o"></i>21 nov 21:34</a>
+														<a href="post.html#comments" class="meta-comments"><i class="fa fa-comment"></i>34</a>
+													</span>
+													<div class="clear-float"></div>
+													<h4><a href="post.html">Solidus - best selling wordpress theme</a></h4>
+													<p>His at everti appetere, vitae utamur eum in, ea ubique vidisse duo.</p>
+												</div>
+											</div>
+
+											<div class="item">
+												<div class="item-content">
+													<a href="#" style="background: #00a651;" class="item-content-category left">Fashion</a>
+													<span class="article-meta left">
+														<a href="blog.html" class="meta-date"><i class="fa fa-clock-o"></i>21 nov 21:34</a>
+														<a href="post.html#comments" class="meta-comments"><i class="fa fa-comment"></i>34</a>
+													</span>
+													<div class="clear-float"></div>
+													<h4><a href="post.html">Solidus - best selling wordpress theme</a></h4>
+													<p>His at everti appetere, vitae utamur eum in, ea ubique vidisse duo.</p>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="widget">
+										<div class="title-block">
+											<h2>Tag Cloud</h2>
+										</div>
+										<div class="tagcloud">
+											<a href="blog.html">Comprehensam</a><a href="blog.html">Consequuntur</a><a href="blog.html">Denique</a><a href="blog.html">Elaboraret scribentur</a><a href="blog.html">Et elaboraret</a><a href="blog.html">Fierent inimicus</a><a href="blog.html">Incorrupte</a><a href="blog.html">Mediocritatem</a><a href="blog.html">Nostrud accusam</a><a href="blog.html">Tation luptatum</a><a href="blog.html">Voluptatum et</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="showmenu">
+					<a href="" class="menu-switch" style="border-bottom: 2px solid #3498db;">Contact</a>
+					</li>
+ -->

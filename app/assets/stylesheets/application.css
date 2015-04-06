@@ -1,0 +1,60 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require font-awesome
+ *= require_self
+ */
+
+
+.wrapper ul li .border_menu{
+	border-bottom: 2px solid #efc94c;
+}
+
+
+
+
+.under-menu1 {
+	display: block;
+	background: #2C2D30;
+	color: #f3f3f3;
+}
+
+.under-menu1 .wrapper {
+	display: block;
+	background: #252628;
+}
+
+.under-menu1 li {
+	display: block;
+	float: left;
+	border-right: 1px solid #36373A;
+}
+
+.under-menu1 ul:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.under-menu1 a {
+	display: block;
+	color: #fff;
+	padding: 19px 27px 16px 27px;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.under-menu1 li:hover > a {
+	background: rgba(255,255,255,0.05);
+}
