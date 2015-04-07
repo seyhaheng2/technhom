@@ -19,6 +19,7 @@
 //= require jquery-latest.min
 //= require elementQuery.min
 //= require theme-scripts
+//= require iscroll
 //= require modernizr.custom.50878
 //= require dat-menu
 //= require SmoothScroll.min
