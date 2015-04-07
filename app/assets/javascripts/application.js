@@ -17,12 +17,10 @@
 //= require react_ujs
 //= require components
 //= require jquery-latest.min
-//= require elementQuery.min
 //= require theme-scripts
 //= require lightbox
 //= require iscroll
 //= require modernizr.custom.50878
-//= require dat-menu
 //= require SmoothScroll.min
 //= require owl.carousel.min
 
