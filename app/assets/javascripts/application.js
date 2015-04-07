@@ -18,8 +18,7 @@
 //= require components
 //= require jquery-latest.min
 //= require elementQuery.min
-//= require lightbox
-//= require iscroll
+//= require theme-scripts
 //= require modernizr.custom.50878
 //= require dat-menu
 //= require SmoothScroll.min
