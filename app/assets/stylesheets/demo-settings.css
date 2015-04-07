@@ -276,7 +276,7 @@
 	right: -140px;
 	width: 129px;
 	height: 73px;
-	background: url(spray-info-background.png) no-repeat center;
+	background: url(../images/demo/spray-info-background.png) no-repeat center;
 	z-index: 10;
 }
 
@@ -288,7 +288,7 @@
 	right: -140px;
 	width: 129px;
 	height: 73px;
-	background: url(spray-info-colors.png) no-repeat center;
+	background: url(../images/demo/spray-info-colors.png) no-repeat center;
 	z-index: 10;
 }
 
@@ -300,7 +300,7 @@
 	right: -140px;
 	width: 129px;
 	height: 73px;
-	background: url(spray-info-fonts.png) no-repeat center;
+	background: url(../images/demo/spray-info-fonts.png) no-repeat center;
 	z-index: 10;
 }
 
