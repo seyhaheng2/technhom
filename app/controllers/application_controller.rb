@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   	@cat2 = Category.find(2)
   	@cat3 = Category.find(3)
   	@cat4 = Category.find(4)
-  	@sub = Subcategory.order(:name)
+  	@sub = Subcategory.order(:name).limit(12)
     @sublast = Subcategory.last
   end
 end
