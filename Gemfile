@@ -25,6 +25,9 @@ gem 'aws-sdk'
 gem 'friendly_id', '~> 5.0.0'
 gem 'fitvidsjs_rails'
 gem 'acts-as-taggable-on', '~> 3.4'
+gem 'carrierwave-dropbox'
+gem 'dropbox-sdk'
+gem 'better_errors'
 
 
 group :development, :test do

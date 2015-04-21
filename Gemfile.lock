@@ -60,6 +60,10 @@ GEM
     aws-sdk-resources (2.0.36)
       aws-sdk-core (= 2.0.36)
     bcrypt (3.1.10)
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -70,8 +74,12 @@ GEM
       activesupport (>= 3.2.0)
       json (>= 1.7)
       mime-types (>= 1.16)
+    carrierwave-dropbox (1.2.1)
+      carrierwave (~> 0.9)
+      dropbox-sdk (~> 1.6)
     ckeditor_rails (4.4.6)
       railties (>= 3.0)
+    coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -91,6 +99,8 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    dropbox-sdk (1.6.4)
+      json
     erubis (2.7.0)
     excon (0.45.1)
     execjs (2.4.0)
@@ -341,11 +351,14 @@ PLATFORMS
 DEPENDENCIES
   acts-as-taggable-on (~> 3.4)
   aws-sdk
+  better_errors
   byebug
   carrierwave
+  carrierwave-dropbox
   ckeditor_rails
   coffee-rails (~> 4.1.0)
   devise
+  dropbox-sdk
   fitvidsjs_rails
   fog
   font-awesome-rails
